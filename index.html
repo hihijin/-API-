@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Understanding TypeScript</title>
+    <!--구글맵 SDK를 어플리케이션에 추가하는 script를 추가해야 한다.-->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh57nz_bescw4I5G02XiVWPtvV3NU8bJo"
+    ></script>
+    <script src="dist/bundle.js" defer></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="map">
+      <!--나중에 이 div태그에 맵을 렌더링하는 것이 목적-->
+      <p>Please enter an address!</p>
+    </div>
+    <form>
+      <input type="text" id="address" />
+      <!--주소 입력창-->
+      <button type="submit">SEARCH ADDRESS</button
+      ><!--제출하면 주소를 좌표로 변환하여 지도상에 렌더링하는게 목적-->
+    </form>
+  </body>
+</html>
